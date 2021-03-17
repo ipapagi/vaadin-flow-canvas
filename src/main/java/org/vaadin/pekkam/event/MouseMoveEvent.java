@@ -6,7 +6,7 @@ import com.vaadin.flow.component.EventData;
 import com.vaadin.flow.dom.DebouncePhase;
 import org.vaadin.pekkam.Canvas;
 
-@DomEvent(value = "mousemove", debounce = @DebounceSettings(timeout = 250, phases = DebouncePhase.INTERMEDIATE))
+@DomEvent(value = "mousemove", debounce = @DebounceSettings(timeout = 150, phases = DebouncePhase.INTERMEDIATE))
 public class MouseMoveEvent extends MouseEvent
 {
    public MouseMoveEvent(

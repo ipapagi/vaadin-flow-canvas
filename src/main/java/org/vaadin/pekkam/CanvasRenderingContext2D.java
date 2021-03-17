@@ -213,6 +213,10 @@ public class CanvasRenderingContext2D {
         callJsMethod("translate", x, y);
     }
 
+    public void setGlobalCompositeOperation(String value) {
+        setProperty("globalCompositeOperation", value);
+    }
+
     protected void setProperty(String propertyName, Serializable value) {
         runScript(String.format("$0.getContext('2d').%s='%s'", propertyName,
                 value));
